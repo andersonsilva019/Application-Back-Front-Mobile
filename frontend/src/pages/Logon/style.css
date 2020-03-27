@@ -28,4 +28,10 @@
     margin-bottom: 32px;
 }
 
+.areaButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 

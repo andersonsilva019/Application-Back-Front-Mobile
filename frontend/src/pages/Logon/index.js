@@ -42,7 +42,10 @@ export default function Logon(){
                         value={id}
                         onChange={e => setId(e.target.value)}
                     />
-                    <button type="submit" className="button">Entrar</button>
+                    <div className="areaButton">
+                        <button type="submit" className="button" style={{marginRight: 2.5}}>Entrar</button>
+                        <button type="submit" className="button" style={{marginLeft: 2.5}}>Deletar</button>
+                    </div>
 
                     <Link className="back-link" to="/register">
                         <FiLogIn size = {16} color="#e02041"/>
