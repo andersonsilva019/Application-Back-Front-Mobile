@@ -3,7 +3,7 @@
 /* Metodo responsável pela criação da tabela */
 exports.up = function(knex) {
     return knex.schema.createTable('ongs', function(table){
-        table.string('id').primary()
+        table.string('id').primary()                        //Definindo o id como chave primaria
         table.string('name').notNullable()
         table.string('email').notNullable()
         table.string('whatsapp').notNullable()

@@ -7,12 +7,12 @@ exports.up = function(knex) {
         table.string('description').notNullable()
         table.decimal('value')
         /* Relacionamento */
-        table.string('ong_id').notNullable()
+        table.string('ong_id').notNullable()                            //id da ong
         /* A coluna 'ong_id' referencia o id da tabela ongs */
-        table.foreign('ong_id').references('id').inTable('ongs')
+        table.foreign('ong_id').references('id').inTable('ongs')        
   })
 };
 
-exports.down = function(knex) {
+exports.down = function(knex) { //Caso der algum erro, apague a tabela
     return knex.shema.dropTable('incidents')
 };
