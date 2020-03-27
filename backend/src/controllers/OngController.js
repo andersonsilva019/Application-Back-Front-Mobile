@@ -1,6 +1,8 @@
 const crypto = require('crypto')                             //Importando a crypto para gerar uma string aleatória
 const connection = require('../database/connection')         //importando a conexão com o banco de dados
 
+
+
 module.exports = {
     
     /* Metodo de listar as ongs*/
